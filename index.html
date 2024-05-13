@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="style.css" />
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <form>
+        <div class="form-row font-weight-bold">
+          <div class="col-md-4 mb-3">
+            <label for="dateInput">Date:</label>
+            <input
+              type="text"
+              id="dateInput"
+              class="date form-control"
+              required
+            />
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="balanceInput">Balance:</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupBalance">$</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="balanceInput"
+                aria-describedby="inputGroupBalance"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="pnlInput">PNL:</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPnl">%</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="pnlInput"
+                aria-describedby="inputGroupPnl"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="button" onclick="getData()">
+          Show
+        </button>
+      </form>
+      <br />
+      <h3></h3>
+      <h3></h3>
+      <br />
+      <table class="table table-bordered table-hover font-weight-bold hidden">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Day</th>
+            <th scope="col">Profit</th>
+            <th scope="col">Current</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+ 
+    </script>
+  </body>
+</html>
